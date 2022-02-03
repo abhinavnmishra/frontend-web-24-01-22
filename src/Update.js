@@ -39,7 +39,7 @@ const Update = () => {
   return (
       <>
         <div class="container-fluid table-responsive">
-          <a href="#update" class="btn btn-light mt-3">UPDATE MENU</a>
+          <a href="summary" class="btn btn-light mt-3">UPDATE MENU</a>
           <br /><br />
           <h3>ORDER SUMMARY</h3>
 
