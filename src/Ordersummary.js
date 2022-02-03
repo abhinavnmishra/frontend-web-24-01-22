@@ -11,7 +11,7 @@ const Ordersummary = () =>{
   
   useEffect(() => {
     const request = async() => {
-      const url = `https://restaurant-app-devops.herokuapp.com/order?token=${token}`;
+      const url = `https://restaurant-app-devops.herokuapp.com/order/getAll?token=${token}`;
       const res = await axios.get(url);
       setResult(res);
     }
