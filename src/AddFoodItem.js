@@ -64,6 +64,7 @@ const AddFoodItem = () => {
             });
     }
 
+
     return (
         <>
             <div class="container-fluid table-responsive">
