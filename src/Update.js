@@ -14,18 +14,19 @@ const Update = () => {
     window.location.href = 'addItem?id='+id;
   }
 
-  const deleteItem = (id) => {
+  const deleteItem = async (id) => {
     console.log(id);
     const requestDelete = async() => {
       const url = `https://restaurant-app-devops.herokuapp.com/foodItem/delete?token=${token}&id=${id}`;
       console.log(url);
       const res = await axios.get(url);
       console.log(res);
-      setResult(res);
+      setResult([]);
     }
-    requestDelete();
+    await requestDelete();
     window.location.href = 'update'
   }
+
 
   useEffect(() => {
     const request = async() => {
